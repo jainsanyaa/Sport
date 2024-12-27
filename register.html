@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Website - Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="registration">
+        <h1>Register Your Club</h1>
+        
+        <!-- Club Registration Form -->
+        <form action="#" method="post">
+            <!-- Club Information Section -->
+            <fieldset>
+                <legend>Club Information</legend>
+                <label for="clubName">Club Name:</label>
+                <input type="text" id="clubName" name="clubName" required><br><br>
+
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="cultural">Cultural</option>
+                    <option value="communityService">Community Service</option>
+                    <option value="academic">Academic</option>
+                    <option value="recreational">Recreational</option>
+                    <option value="other">Other (please specify)</option>
+                </select>
+                <input type="text" id="otherCategory" name="otherCategory" placeholder="Specify if other"><br><br>
+            </fieldset>
+
+            <!-- Club Leader Information Section -->
+            <fieldset>
+                <legend>Club Leader Information</legend>
+                <label for="leaderName">Name:</label>
+                <input type="text" id="leaderName" name="leaderName" required><br><br>
+
+                <label for="leaderEmail">Email:</label>
+                <input type="email" id="leaderEmail" name="leaderEmail" required><br><br>
+
+                <label for="leaderPhone">Phone:</label>
+                <input type="tel" id="leaderPhone" name="leaderPhone" required><br><br>
+            </fieldset>
+
+            <!-- Club Member Information Section -->
+            <fieldset>
+                <legend>Club Member Information</legend>
+                <label for="numMembers">Number of Members:</label>
+                <input type="number" id="numMembers" name="numMembers" required><br><br>
+
+                <label for="memberNamesEmails">Member Names and Emails (separate with commas):</label><br>
+                <textarea id="memberNamesEmails" name="memberNamesEmails" rows="4" cols="50" required></textarea><br><br>
+            </fieldset>
+
+            <!-- Meeting Information Section -->
+            <fieldset>
+                <legend>Meeting Information</legend>
+                <label for="meetingFrequency">Meeting Frequency:</label>
+                <select id="meetingFrequency" name="meetingFrequency" required>
+                    <option value="weekly">Weekly</option>
+                    <option value="biweekly">Biweekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                </select><br><br>
+
+                <label for="meetingTime">Meeting Time:</label>
+                <input type="text" id="meetingTime" name="meetingTime" required><br><br>
+
+                <label for="meetingLocation">Meeting Location:</label>
+                <input type="text" id="meetingLocation" name="meetingLocation" required><br><br>
+            </fieldset>
+
+            <!-- Additional Information Section -->
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="goalsObjectives">Goals and Objectives:</label><br>
+                <textarea id="goalsObjectives" name="goalsObjectives" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="eventsActivities">Planned Events and Activities:</label><br>
+                <textarea id="eventsActivities" name="eventsActivities" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="budgetFunding">Budget and Funding:</label><br>
+                <textarea id="budgetFunding" name="budgetFunding" rows="4" cols="50" required></textarea><br><br>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Register Club</button>
+        </form>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sports Website. All rights reserved.</p>
+    </
